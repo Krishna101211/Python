@@ -68,7 +68,8 @@ output:--> Python,java,hi
 # for i in w:
 #     d.update({i:ord(i)})  #with using inbuilt function
 # print(d)
-# print()
+
+
 # d={}
 # for i in w:
 #     d[i]=ord(i)
@@ -97,8 +98,8 @@ output:--> Python,java,hi
 # x="good luck"
 # for i in x[::-1]:
 #     print(i,end=" ")
-#
-# print()
+
+
 # res=''
 # for i in x:
 #     res=i+res

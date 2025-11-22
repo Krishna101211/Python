@@ -1,16 +1,21 @@
 """ list comprehension syntax syntax-->1 without if-else block var_name=[operation(inseration /update/print) forloop condition]
  syntax--->2 with simple if condition var_name=[TSB forloop condition if condition]
  syntax--->3 with both if-else block var_name=[TSB if condition else block for loop condition]
+
+
 --------------------------------------------------------------------------
  set comprehension syntax syntax-->1 without if-else block var_name={operation(inseration/update/print) forloop condition}
  syntax--->2 with simple if condition var_name={TSB forloop condition if condition}
  syntax--->3 with both if-else block var_name={TSB if condition else block for loop condition}
+
+
  --------------------------------------------------------------------------
  Dict comprehension syntax syntax-->1 without if-else block var_name={Key:Value forloop condition}
  syntax--->2 with simple if condition var_name={key:value(TSB) forloop condition if condition}
   syntax--->3 with both if-else block var_name={Key:value(TSB) if condition else block for loop condition} """
 from os.path import split
 from xmlrpc.client import boolean
+
 
 """ #nested comprehension syntax without if-else condition var_name=[operation outer for loop inner for loop] 
 with simple if condition var_name=[operation outer for loop inner for loop if condition] 

@@ -1,6 +1,4 @@
 
-'''
-#
 # 3.wap to capitalize only the first letter of every word in
 # the given list
 # l=["vaidegi","rahul","shivam","kapil","patil"]
@@ -14,6 +12,7 @@
 #     if type(i) in (int,float,complex,bool):
 #         print(i)
 # print()
+
 # for i in l:
 #     if isinstance(i,(int,float,complex,bool)):
 #         print(i)
@@ -72,52 +71,66 @@ for 5+6j in l:
 # print(space)
 
 # 7.wap to check how many words are present in the given sentence
-s = "hello world sentence"
-total_word = 0
-for i in s.split():
-    total_word = total_word + 1
-print(total_word)
+# s = "hello world sentence"
+# total_word = 0
+# for i in s.split():
+#     total_word = total_word + 1
+# print(total_word)
 
 # 8.wap to create a dictionary and print the characters
 # and its Ascii value pair
-s = "hello world"
-# output:--> {"h":ascii value,"e":ascii value........}
+# s = "hello world"
+# output:--> {'h': 104, 'e': 101, 'l': 108, 'o': 111, ' ': 32, 'w': 119, 'r': 114, 'd': 100}
+# s = "hello world"
+# d={}
+# for i in s:
+#     i.split()
+#     d[i]=ord(i)
+# print(d)
+
 
 # 9.wap to create a dictionary and traverse into
 # it and if the length is even print as it else reverse it
-names = ["apple", "google", "yahoo", "microsoft", "gmail", "walmart"]
+# names = ["apple", "google", "yahoo", "microsoft", "gmail", "walmart"]
 # output:-->{'apple': 'elppa', 'google': 'google', 'yahoo': 'oohay', 'microsoft': 'tfosorcim', 'gmail': 'liamg', 'walmart': 'tramlaw'}
-d = {}
-for i in names:
-    if len(i) % 2 == 0:
-        d.update({i: i})  # d[i]=i
-    else:
-        d.update({i: i[::-1]})  # d[i]=i[::-1]
-print(d)
+# d = {}
+# for i in names:
+#     if len(i) % 2 == 0:
+#         d.update({i: i})  # d[i]=i
+#     else:
+#         d.update({i: i[::-1]})  # d[i]=i[::-1]
+# print(d)
 
 # 10.wap to print series of factorial(take user input)
+# num = int(input("Enter a number: "))
+# fact = 1
+# print("Factorial series:")
+# for i in range(1, num + 1):
+#     fact = fact * i
+#     print(fact)
+
 
 # 11.wap to create a dictionary with element and its count pair
-l = ["yellow", "red", "black", "pink", "orange", "green", "red", "pink", "yellow"]
+# l = ["yellow", "red", "black", "pink", "orange", "green", "red", "pink", "yellow"]
 # output:-->
 # {'yellow': 2, 'red': 2, 'black': 1, 'pink': 2, 'orange': 1, 'green': 1}
+# e = {}
+# for i in l:
+#     e.update({i: l.count(i)})  # e[i]=l.count(i)
+# print(e)
 
-e = {}
-for i in l:
-    e.update({i: l.count(i)})  # e[i]=l.count(i)
-print(e)
 
 # 12.wap to find the length of the string without using inbuilt function
-s = "Never Give Up"
-length = 0
-for i in s:
-    length = length + 1
-print(length)
+# s = "Never Give Up"
+# length = 0
+# for i in s:
+#     length = length + 1
+# print(length)
+
 
 # 13.wap to reverse a string without using inbuilt function
-x = "you did it guys"
-res = ''
-for i in x:
-    res = i + res
-print(res)
-'''
+# x = "you did it guys"
+# res = ''
+# for i in x:
+#     res = i + res
+# print(res)

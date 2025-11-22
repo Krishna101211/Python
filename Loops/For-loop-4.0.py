@@ -1,32 +1,31 @@
 # FOR LOOP  level one questions
-'''
+
 # 1.wap to print the number form 1 -20 segregate even and
 # odd number into list
-e=[]
-o=[]
-for i in range(0,21,1):
-    if i%2==0:
-        e.append(i)
+# e=[]
+# o=[]
+# for i in range(0,21,1):
+#     if i%2==0:
+#         e.append(i)
+#     else:
+#         o.append(i)
+# print(e)
+# print(o)
 
-    else:
-        o.append(i)
-print(e)
-print(o)
+
 # 2.wap to extract vowels and digits in a string { how to add digits ?}
-s = "hello123"
-v='aeiou'
-v_1=""
-digit=""
-for i in s:
-    if i in v:
-        v_1=v_1+i
+# s = "hello123"
+# v='aeiou'
+# v_1=""
+# digit=""
+# for i in s:
+#     if i in v:
+#         v_1=v_1+i
+#     elif i.isdigit():
+#         digit=digit+i
+# print(digit)
+# print(v_1)
 
-    else:
-        i.isalnum()
-        digit=digit+i
-print(digit)
-print(v_1)
-'''
 
 # 3.wap to capitalize only the first letter of every word in
 # the given list
@@ -45,6 +44,7 @@ print(v_1)
 #     if isinstance(i,(int,float,complex,bool)):
 #         print(i)
 
+
 # 5.wap to extract only individual data types from the list and
 # sum all the individual data types
 # l=["hello",1,23.4,5+6j,"guys",[2,3,4],True,False]
@@ -54,6 +54,8 @@ print(v_1)
 #         print(i)
 #         Total=Total+i
 # print(Total)
+
+
 """ 
 step-->1 
 Total=0 
@@ -81,6 +83,8 @@ for 5+6j in l:
 
 #Total=29.4+6j+True---->30.4+6j     
 """
+from operator import index
+
 # 6.wap to print the count of alphabets and numbers
 # and space in the given string
 # s="india got the independence in the year 1947"
@@ -104,20 +108,19 @@ for 5+6j in l:
 # for i in s.split():
 #     total_word=total_word+1
 # print(total_word)
-'''
+
 # 8.wap to create a dictionary and print the characters
 # and its Ascii value pair
 # output:--> {"h":ascii value,"e":ascii value........}
-s = "hello world"
-d = {}
-for char in s:
-    d[char] = ord(char)  # map character to ASCII value
-
-print(d)
+# s = "hello world"
+# d = {}
+# for char in s:
+#     d[char] = ord(char)  # map character to ASCII value
+# print(d)
 
 # 9.wap to create a dictionary and traverse into
 # it and if the length is even print as it else reverse it
-names = ["apple", "google", "yahoo", "microsoft", "gmail", "walmart"]
+# names = ["apple", "google", "yahoo", "microsoft", "gmail", "walmart"]
 # output:-->{'apple': 'elppa', 'google': 'google', 'yahoo': 'oohay', 'microsoft': 'tfosorcim', 'gmail': 'liamg', 'walmart': 'tramlaw'}
 # d={}
 # for i in names:
@@ -136,6 +139,7 @@ names = ["apple", "google", "yahoo", "microsoft", "gmail", "walmart"]
 #     fact=fact*i
 # print(fact)
 
+
 # 11.wap to create a dictionary with element and its count pair
 # l=["yellow","red","black","pink","orange","green","red","pink","yellow"]
 # # output:-->
@@ -144,6 +148,7 @@ names = ["apple", "google", "yahoo", "microsoft", "gmail", "walmart"]
 # for i in l:
 #     e.update({i:l.count(i)})  #e[i]=l.count(i)
 # print(e)
+
 
 # 12.wap to find the length of the string without using inbuilt function
 # s="Never Give Up"
@@ -162,11 +167,16 @@ names = ["apple", "google", "yahoo", "microsoft", "gmail", "walmart"]
 
 
 # 14.wap to print alternative character from a given string
-s = "hello python"
-for i in range(0,len(s),2):
-    print(s[i])
-'''
+# s = "hello python"
+# for i in range(0,len(s),2):
+#     print(s[i])
+
+
 # 15.wap to create a dictionary index and word pair
 s = "tomorrow is weekend and non-veg special"
 # o/p:-->{0: 'tomorrow', 1: 'is', 2: 'weekend', 3: 'and', 4: 'non-veg', 5: 'special'}
-
+d={}
+words=s.split()
+for i in range(len(words)):
+    d[i]=words[i]
+print(d)

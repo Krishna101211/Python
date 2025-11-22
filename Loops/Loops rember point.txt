@@ -1,0 +1,109 @@
+y=(11,"hello",[1,2,3],{3,4,5})
+for i in y:
+print(i,end=" ")  we use end="" to print o/p sequentially 
+
+# s=[1,2,3,4,5] #without using inbuilt function
+# l=[]
+# for i in s:
+# l=[i]+l
+# print(l)
+
+s = "hello world"  ----------->if we use split  in loops s.split() words will get split not alphabets 
+# d={}                                                 to get alphabet indvidualy we go for the i.split()
+# for i in s:
+# i.split()
+# d[i]=ord(i)
+# print(d) 
+
+# 10.wap to print series of factorial(take user input)
+num = int(input("Enter a number: "))
+fact = 1
+print("Factorial series:")
+for i in range(1, num + 1):
+fact = fact * i
+print(fact)
+
+# 11.wap to create a dictionary with element and its count pair
+# l = ["yellow", "red", "black", "pink", "orange", "green", "red", "pink", "yellow"]
+# output:-->
+# {'yellow': 2, 'red': 2, 'black': 1, 'pink': 2, 'orange': 1, 'green': 1}
+# e = {}
+# for i in l:
+# e.update({i: l.count(i)}) # e[i]=l.count(i)
+# print(e)
+
+# 2.wap to extract vowels and digits in a string # get know to add digit 
+s = "hello123"
+v='aeiou'
+v_1=""
+digit=""
+for i in s:
+if i in v:
+v_1=v_1+i
+elif i.isdigit():
+digit=digit+i
+print(digit)
+print(v_1)
+
+*********we cant concanat int or individual data type in collection **********************
+
+
+
+# 13.wap to reverse a string without using inbuilt function
+# x="you did it guys"
+# res=''
+# for i in x:
+# res=i+res
+# print(res)
+
+
+# 15.wap to create a dictionary index and word pair
+s = "tomorrow is weekend and non-veg special"
+# o/p:-->{0: 'tomorrow', 1: 'is', 2: 'weekend', 3: 'and', 4: 'non-veg', 5: 'special'}
+d={}
+words=s.split()
+for i in range(len(words)):
+d[i]=words[i]
+print(d)
+
+18.wap to create a dictionary Ascii and character pair
+# l = [89, 51, 111, 77, 108, 120]
+# o/p:-->{89: 'Y', 51: '3', 111: 'o', 77: 'M', 108: 'l', 120: 'x'}
+# d={}
+# for i in l:
+# d[i]=chr(i)
+# print(d)
+
+
+# 21.wap to create a dictionary with letter and its words starting with that letter pair
+s = "hi hello good morning welcome to python session"
+# o/p:-->{'h': ['hi', 'hello'], 'g': ['good'], 'm': ['morning'], 'w': ['welcome'], 't': ['to'], 'p': ['python'], 's': ['session']}
+d={}
+for w in s.split():
+key = w[0] # first letter of word
+if key not in d:
+d[key] = [] # create empty list
+d[key].append(w) # add word to list
+print(d)
+
+
+# 22.wap to create a dictionary of characters and its indices pair
+s = "hello python"
+# o/p:-->{"h":[0,9],"e":1..........}
+d = {} # empty dictionary
+for i in range(len(s)):
+ch = s[i]
+if ch != " ": # ignore spaces
+if ch not in d:
+d[ch] = [] # create empty list
+d[ch].append(i) # add index to list
+print(d)
+
+
+# 24.Reverse a list without using any built-in functions and slicing.
+l = [1, 2, 3, 4]
+reverse=[]
+for i in l:
+reverse=[i]+reverse
+print(reverse)
+
