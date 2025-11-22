@@ -118,38 +118,7 @@ new_one=lambda arg1.... :[expression for loop condition]
 # # 8. Absolute value
 # absolute = lambda x: x if x>=0 else -x
 # print(absolute(-9))  # 9
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+
 # # 9. greater among three numbers
 # max_three = lambda a,b,c: max(a,b,c)
 # print(max_three(10,20,30))  # 30
@@ -243,26 +212,32 @@ new_one=lambda arg1.... :[expression for loop condition]
 # iter_len = lambda x: len(x)
 # print(iter_len((1,2,3,4)))  # 4
 #
+
 # # 32. list of squares of numbers
 # squares_list = lambda l: [x**2 for x in l]
 # print(squares_list([2,3,4,5,6]))
 # # [4,9,16,25,36]
-#
+'''
 # # 33. numbers with indices pair
 # index_pairs = lambda l: list(enumerate(l))
 # print(index_pairs([100,200,300]))
 # # [(0,100),(1,200),(2,300)]
-#
+'''
+
+'''
 # # 34. check if data is sequence
 # check_seq = lambda x: ("length",len(x)) if hasattr(x,'__len__') else ("type",type(x))
 # print(check_seq([1,2,3]))  # ('length', 3)
 # print(check_seq(123))      # ('type', <class 'int'>)
-#
+'''
+
+
 # # 35. even or odd: even→square, odd→sqrt
 # even_square_odd_sqrt = lambda x: x**2 if x%2==0 else x**0.5
 # print(even_square_odd_sqrt(4))  # 16
 # print(even_square_odd_sqrt(9))  # 3.0
-#
+
+
 # # 36. if length even return same else reverse
 # even_len_same_else_reverse = lambda s: s if len(s)%2==0 else s[::-1]
 # print(even_len_same_else_reverse("hello"))  # olleh
@@ -271,7 +246,7 @@ new_one=lambda arg1.... :[expression for loop condition]
 # value_and_len = lambda s: ((s,len(s)), {s:len(s)})
 # print(value_and_len("python"))
 # # (('python',6), {'python':6})
-#
+
 # # 38. same as 34 (sequence check)
 # check_seq2 = lambda x: ("length",len(x)) if hasattr(x,'__len__') else ("type",type(x))
 # print(check_seq2("abc"))  # ('length', 3)
@@ -280,8 +255,8 @@ new_one=lambda arg1.... :[expression for loop condition]
 # plus_or_minus_5 = lambda x: x+5 if x%5==0 else x-5
 # print(plus_or_minus_5(10))  # 15
 # print(plus_or_minus_5(7))   # 2
-#
+'''
 # # 40. Check if two strings are anagrams
 # is_anagram = lambda s1,s2: sorted(s1)==sorted(s2)
 # print(is_anagram("listen","silent"))  # True
-
+'''

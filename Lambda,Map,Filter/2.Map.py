@@ -7,6 +7,7 @@ print(list(new var))
 """
 from importlib.resources import read_text
 
+
 '''
 s=[10,20,30,40,50]
 def Square(s):
@@ -165,23 +166,29 @@ print(list(map(o,["  python ", " map ", " function  "])))
 """
 # #Check palindrome words
 # words = ["mom", "python", "dad", "level"]
-#
-#
+
+
 # #Convert floats to integers
 # nums = [1.2, 3.7, 5.9]
-#
-#
+# nums = [1.2, 3.7, 5.9]
+# x= lambda i:int(i)
+# print(list(map(x,nums)))
+
 # #wap to return list of name and length pair
 # n=['laptop','mouse','board','house','week']
-#
-"""
+#n=['laptop','mouse','board','house','week']
+# x = lambda i: (i, len(i))
+# print(list(map(x,n)))
+
 #wap to return if the key is individual return its values else
 # return its type
-s={10:"ten","hai":"value",(1,2,3):"collection",1.2:"decimal"}
+# s={10:"ten","hai":"value",(1,2,3):"collection",1.2:"decimal"}
+#
+# l= lambda i:s[i] if isinstance(i,(int,float,complex,bool)) else type(i)
+# print(list(map(l,{10:"ten","hai":"value",(1,2,3):"collection",1.2:"decimal"})))
 
-l= lambda i:s[i] if isinstance(i,(int,float,complex,bool)) else type(i)
-print(list(map(l,{10:"ten","hai":"value",(1,2,3):"collection",1.2:"decimal"})))
-"""
+
+
 """
 # # 14.Given a list of dates in string format
 # (["2025-09-18", "2024-12-31"]), use map() to extract only the year.
@@ -189,6 +196,8 @@ s=["2025-09-18", "2024-12-31"]
 k=lambda i:i.split("-")[1]
 print(list(map(k,["2025-09-18", "2024-12-31"])))
 """
+
+
 """
 # # 15.Use map() with lambda and str.join() to join characters of each list into a string.
 data = [["p", "y", "t", "h", "o", "n"], ["m", "a", "p"]]
