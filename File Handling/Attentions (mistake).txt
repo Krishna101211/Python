@@ -1,0 +1,11 @@
+1) use open not popen during mode operations
+this is way without context manager
+file=open("Evening.txt","a")#popen
+print(file.write("Hello guys my name is"))
+
+2) with context manager
+with open("email1.txt","w")as z:
+    print(z.write("Think"))
+os.popen("email1.txt")
+
+3)
