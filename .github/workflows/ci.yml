@@ -1,0 +1,21 @@
+name: CI Pipeline
+
+# TRIGGERS
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# JOBS
+jobs:
+  test:
+    runs-on: ubuntu-latest    # The machine to use
+
+    steps:
+      - uses: actions/checkout@v4       # Get the code
+      - uses: actions/setup-node@v4     # Install Node.js
+        with:
+          node-version: '20'
+      - run: npm install                # Install deps
+      - run: npm test                   # Run tests
